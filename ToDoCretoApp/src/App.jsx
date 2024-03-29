@@ -79,7 +79,6 @@ const App = () => {
 
   }
   return (
-    <BrowserRouter>
     <Layout style={{height:"100vh"}}>
       {/* <Sider trigger={null} style={{position:'fixed',height:'100vh'}}*/}
       <Sider
@@ -183,7 +182,6 @@ const App = () => {
         </Content>
       </Layout>
     </Layout>
-    </BrowserRouter>
 
   );
 };

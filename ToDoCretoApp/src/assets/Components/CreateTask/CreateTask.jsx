@@ -1,10 +1,10 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input ,Flex} from 'antd';
 import { v4 as uuidv4 } from 'uuid';
-import {Link, Navigate,redirect} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 const CreateTask = (props) => {
-
+  let navigate = useNavigate()
   const onFinish = (values) => {
     let obj   = values
     obj['id'] = uuidv4();
@@ -12,7 +12,8 @@ const CreateTask = (props) => {
     let array = [...props.tasks]
     array.push(values)
     props.setTasks(array)
-
+    alert("Task created click on go back to home")
+    navigate("/")
   
   };
   const onFinishFailed = (errorInfo) => {
