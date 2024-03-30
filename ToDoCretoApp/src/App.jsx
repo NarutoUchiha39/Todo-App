@@ -104,25 +104,25 @@ const App = () => {
             {
               key: '1',
               icon: <UserOutlined />,
-              label: 'All Tasks',
+              label: <Link to={"/"}>All Tasks</Link>,
               onClick:setHeadet
             },
             {
               key: '2',
               icon: <CheckCircleOutlined />,
-              label: 'Completed Tasks',
+              label: <Link to={"/"}>Pending Task</Link>,
               onClick:setHeadet
             },
             {
               key: '3',
               icon: <AliwangwangOutlined />,
-              label: 'Pending Tasks',
+              label: <Link to={"/"}>Pending Task</Link>,
               onClick:setHeadet
             },
             {
               key: '4',
               icon: <WarningOutlined />,
-              label: 'Urgent Task',
+              label: <Link to={"/"}>Urgent Task</Link>,
               onClick:setHeadet
             },
             {
